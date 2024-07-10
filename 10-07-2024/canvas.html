@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My First Canvas</h1>
+    <canvas id="myCanvas" width="500" height="500" style="border:10px ridge;background-color: yellowgreen; box-shadow: 8px 20px 15px black; margin-left: 20px;">
+    </canvas>
+    
+    <canvas id="myCanvas1" width="500" height="500" style="border:10px ridge;background-color: rgb(219, 57, 237); box-shadow: 8px 20px 15px black;">
+    </canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(500, 500);
+        ctx.stroke();
+
+        var canvas1 = document.getElementById("myCanvas1");
+        var ctx1 = canvas1.getContext("2d");
+        ctx1.moveTo(0, 0);
+        ctx1.lineTo(500, 500);
+        ctx1.stroke();
+    </script>
+</body>
+</html>
